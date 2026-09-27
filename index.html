@@ -1,0 +1,794 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Curso de Carpintería en Melamina: +460 clases organizadas por tema + 1.600 planos con medidas | MELAMINA PRO</title><meta name="description" content="Más de 460 clases en video, organizadas en secciones por tema para que aprendas justo lo que quieres, a tu ritmo: melamina, SketchUp, Resina Epóxica y Polyboard, entre otros. Además, la biblioteca completa de planos: 1.600 planos de melamina con medidas (2.562 en total entre melamina, madera y metal) en 7.073 páginas. Pago único, acceso inmediato."><meta name="robots" content="index,follow"><meta property="og:title" content="Curso de Carpintería en Melamina: +460 clases organizadas por tema + 1.600 planos con medidas | MELAMINA PRO"><meta property="og:description" content="Más de 460 clases en video, organizadas en secciones por tema para que aprendas justo lo que quieres, a tu ritmo: melamina, SketchUp, Resina Epóxica y Polyboard, entre otros. Además, la biblioteca completa de planos: 1.600 planos de melamina con medidas (2.562 en total entre melamina, madera y metal) en 7.073 páginas. Pago único, acceso inmediato."><meta property="og:type" content="website"><meta property="og:image" content="https://curso.melamina.pro/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" sizes="32x32" href="https://curso.melamina.pro/img/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="https://curso.melamina.pro/img/icon-180.png"><!-- v4 peso: las fuentes son PROPIAS, servidas desde este mismo dominio. Ya no
+hay hoja remota, ni preconnect, ni noscript: cero terceros en la pagina.
+Son las MISMAS Inter e Inter Tight que servia Google (variables, un archivo
+por familia), subseteadas a los caracteres que esta pagina puede mostrar y
+con los unicode-range exactos de Google: el latin se baja siempre, el
+latin-ext SOLO si el texto trae un caracter de ese rango. Hoy ese rango son
+dos glifos: el colon de Costa Rica y el guarani de Paraguay, que antes
+costaban 174.868 B de archivo ext y ahora 5.852 B. --><!-- el poster del hero es lo primero que se ve: se pide de una y con prioridad.
+Se precarga el WEBP, que es lo que el navegador va a usar de verdad; si no
+soporta webp cae al jpg del <picture> y el preload se descarta.
+Poster y clip van RECORTADOS a 3:4, que es el unico encuadre que el CSS
+muestra (.pv tiene aspect-ratio 9/12 y object-fit:cover): antes 1 de cada
+4 bytes del alto se descargaba y no se veia nunca. --><link rel="preload" as="font" type="font/woff2" href="https://curso.melamina.pro/fonts/inter.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="https://curso.melamina.pro/fonts/inter-tight.woff2" crossorigin><link rel="preload" as="image" href="https://curso.melamina.pro/video/hero.webp" type="image/webp" fetchpriority="high">
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://curso.melamina.pro/fonts/inter.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://curso.melamina.pro/fonts/inter-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Inter Tight';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://curso.melamina.pro/fonts/inter-tight.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Inter Tight';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://curso.melamina.pro/fonts/inter-tight-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+  :root{
+    /* v4 PALETA "TALLER" — derivada del target medido, no del gusto.
+       Melamina: 76% hombres · 59,6% de 45 anos o mas · 99,9% Android · 87% Facebook.
+       Fuera el sustrato negro-tecnologico: ese es de CapCut (34% de 18-34).
+       Aca el sustrato es NOGAL QUEMADO (hue ~27, muy oscuro y CALIDO): huele a
+       taller sin volver al marron apagado de la v1. Contrastes contra --bg:  */
+    --bg:#1a120b; --panel:#241a11; --panel2:#302317; --line:#6b4f3c;
+    /* blanco CALIDO (no #fff puro): 17,33:1 — el puro deslumbra en AMOLED barato */
+    --tx:#fff6ee; --mut:#ecdac9; --dim:#d2bdaa;          /* 13,60 · 10,22 */
+    /* --acc NO SE TOCA (orden de Esteban). Techo medido: 7,32:1 y solo contra
+       negro absoluto, o sea el naranja NUNCA llega a AAA como texto. Por eso
+       pasa a ser color de ACCION (fondo de pastilla y cifra grande) y el texto
+       chico de acento se va a --acc2, que si da 8,79:1. */
+    --acc:#ff6a13; --acc2:#ff9a4d; --ink:#0d0500;        /* ink sobre acc: 7,05 */
+    /* v5: FUERA EL AZUL (orden de Esteban: "lo unico que no me convence es el
+       color azul"). El 2o acento pasa a ARENA DE PINO, un amarillo-arena muy
+       claro y calido. No es gusto: el teal cuidaba una funcion medida (con 76%
+       de hombres, ~6% del publico no distingue rojo de verde y el 2o acento no
+       podia ser verde), y el reemplazo la sostiene. Medido en CIEDE2000 sobre
+       la simulacion Vienot-Brettel-Mollon del ojo dicromata:
+         arena vs --acc  #ff6a13 : deuteranopia 23,0 · protanopia 31,6
+         arena vs --acc2 #ff9a4d : deuteranopia 16,4 · protanopia 20,2
+       (el JND es ~2,3, o sea se separan de sobra). El AMBAR DORADO que parecia
+       la respuesta obvia NO sirve: #f5c65a cae a 5,5 en deuteranopia contra
+       --acc2 -- para ese ojo el bono y el precio son el mismo color.
+       Contraste sobre --bg: 17,04:1. Funcion intacta: arena = lo que te
+       REGALAN (bonos, garantia); naranja = lo que PAGAS. */
+    --acc3:#fff8b5;
+    --steel:#a89383; --deep:#0f0a06;                     /* adorno 6,31 · pozo */
+    --radius:16px; --max:1080px;
+    --disp:"Inter Tight","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  /* v4: base 17px. El target es 59,6% de 45 anos o mas: la presbicia es la
+     NORMA, no la excepcion. Medido antes: 424 textos de cuerpo bajo 17px,
+     el grueso del cuerpo a 15,2px. 1rem pasa a valer 17px. */
+  html{font-size:17px;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--tx);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:var(--disp);font-weight:900;letter-spacing:-.035em;line-height:1.05}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--acc);color:var(--ink)}
+
+  /* BOTONES: pastilla del acento con texto casi negro (el mismo contraste que
+     el molde logra con blanco sobre negro, aca con el naranja de herramienta) */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:var(--ink);font-family:var(--disp);font-weight:800;letter-spacing:-.01em;font-size:1.05rem;padding:16px 36px;border-radius:999px;border:none;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;box-shadow:0 0 0 1px rgba(255,106,19,.45),0 8px 26px -6px rgba(255,106,19,.9),0 0 52px -6px rgba(255,106,19,.55)}
+  .btn:hover{transform:translateY(-2px);background:var(--acc2);box-shadow:0 0 0 1px rgba(255,154,77,.6),0 14px 34px -6px rgba(255,106,19,1),0 0 72px -4px rgba(255,106,19,.7)}
+  .btn.big{font-size:1.2rem;padding:20px 46px}
+  /* el ghost SI es un control: su borde necesita el 3:1 de WCAG 1.4.11 y
+     --line se queda en 2,47. Va con borde de acento (6,45:1). */
+  .btn.ghost{background:transparent;color:var(--tx);border:1.5px solid rgba(255,154,77,.75);box-shadow:none}
+  .btn.ghost:hover{border-color:var(--acc);background:transparent;box-shadow:none}
+  .btn[aria-disabled="true"]{background:var(--panel2);color:var(--mut);border:1px solid var(--line);box-shadow:none;cursor:not-allowed;transform:none}
+
+  /* MARCA */
+  .logo{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:900;font-size:1.18rem;letter-spacing:-.04em}
+  /* v6: la marca ya no es un icono generico dentro de una pastilla naranja:
+     es la M de MELAMINA PRO con glow, servida DESDE ESTE REPO (img/), nunca
+     hotlinkeada. Contraste medido del trazo (p90) contra --bg: 6,96:1 -- el
+     piso de WCAG 1.4.11 para grafico es 3:1, o sea 2,3x de sobra. Va con
+     width/height puestos: el layout no salta mientras carga (4127 B). */
+  .logo .mark{width:42px;height:42px;display:block;flex-shrink:0;object-fit:contain}
+  .logo .mark.big{width:66px;height:66px}
+  .logo .sub{font-weight:700;font-size:.78rem;letter-spacing:.14em;color:var(--acc2);text-transform:uppercase}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(26,18,11,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  nav .btn{padding:11px 22px;font-size:1rem}
+
+  /* HERO */
+  /* GLOW DEL HERO: el resplandor SI pinta debajo del h1 y del subtitulo, asi
+     que su tope no es estetico sino medido: al 16% sobre --bg el peor texto
+     de la zona (--acc2) queda en 7,02:1; al 22% cae a 6,30 y rompe AAA.
+     v5: la 2a capa ya no es teal sino ARENA, que es mucho mas clara, asi
+     que baja del 10% al 8%: apilada sobre el naranja al 16% el peor texto
+     del hero (--mut) queda en 8,68:1, y al 10% caia a 8,11. */
+  header{position:relative;padding:74px 0 60px;background:radial-gradient(90% 62% at 50% -4%,rgba(255,106,19,.16),transparent 66%),radial-gradient(70% 50% at 88% 6%,rgba(255,248,181,.08),transparent 62%)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .pill{display:inline-flex;gap:8px;align-items:center;box-shadow:0 0 0 1px rgba(255,106,19,.16),0 6px 22px -14px rgba(255,106,19,.9);font-size:1rem;font-weight:700;color:var(--tx);background:var(--panel2);border:1px solid var(--line);padding:7px 16px;border-radius:999px;margin-bottom:22px;letter-spacing:.01em}
+  .pill b{color:var(--acc2)}
+  header h1{font-size:clamp(2.2rem,6vw,3.8rem);margin-bottom:18px}
+  header h1 .cut{position:relative;display:inline-block}
+  header h1 .cut::after{content:"";position:absolute;left:0;right:0;bottom:-.1em;height:.12em;background:var(--acc);transform:skewX(-18deg)}
+  header p.sub{font-size:clamp(1.05rem,2.4vw,1.28rem);color:var(--mut);max-width:600px;margin:0 0 30px}
+  header p.sub b{color:var(--tx)}
+  .cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  /* v5: era --dim. El motor de la v4 media las dos capas del hero como
+     ALTERNATIVAS y no APILADAS: apiladas, --dim sobre el hero daba 6,93 y
+     rompia el piso AAA de 7. Con --mut da 8,68. */
+  .cta-note{color:var(--mut);font-size:1rem;margin-top:14px}
+
+  /* MOCKUP: el telefono en el taller. La tira de abajo no es una linea de
+     tiempo de video: son las piezas del despiece sobre el tablero. */
+  .device{width:262px;justify-self:center;filter:drop-shadow(0 26px 60px rgba(255,106,19,.45)) drop-shadow(0 0 40px rgba(255,106,19,.25))}
+  .phone{background:var(--bg);border:2px solid var(--line);border-radius:42px;padding:11px;position:relative}
+  .phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:80px;height:6px;border-radius:99px;background:var(--line);z-index:3}
+  .screen{border-radius:32px;overflow:hidden;background:var(--deep);border:1px solid var(--line)}
+  .pv{position:relative;overflow:hidden;aspect-ratio:9/12;background:radial-gradient(120% 75% at 50% 22%,rgba(255,106,19,.30),transparent 62%),linear-gradient(165deg,var(--panel2),var(--bg));display:flex;align-items:center;justify-content:center}
+  .pv .vd-hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;pointer-events:none;z-index:1}
+  .pv .pv-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:brightness(.85)}
+  .pv .tag{position:absolute;z-index:2;top:12px;left:12px;font-size:.6rem;font-weight:800;color:var(--ink);background:var(--acc);padding:4px 10px;border-radius:99px}
+  .pv .rec{position:absolute;z-index:2;top:12px;right:12px;font-size:.58rem;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:5px}
+  .pv .rec::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 8px var(--acc)}
+  .tl{background:var(--bg);padding:10px 9px 13px}
+  .tl .tools{display:flex;gap:12px;justify-content:space-around;margin-bottom:9px}
+  .tl .tools i{width:20px;height:3px;border-radius:99px;background:var(--steel)}
+  .tl .tools i:first-child{background:var(--acc)}
+  .tl .track{display:flex;gap:3px;align-items:center}
+  .tl .clip{height:22px;border-radius:4px;flex:1}
+  .tl .clip.a{background:linear-gradient(120deg,var(--acc2),var(--acc))}
+  .tl .clip.b{background:linear-gradient(120deg,var(--mut),var(--steel))}
+  .tl .clip.c{background:linear-gradient(120deg,var(--dim),var(--line))}
+  .tl .clip.d{background:linear-gradient(120deg,var(--steel),var(--panel));flex:.55}
+  .tl .scrub{width:2px;height:30px;background:var(--acc);border-radius:2px;box-shadow:0 0 14px 1px rgba(255,106,19,1);margin:0 1px}
+
+  /* CIFRAS */
+  .badges{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:52px auto 0;max-width:880px}
+  .badge{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 12px;text-align:center;box-shadow:0 0 0 1px rgba(255,106,19,.10),0 12px 30px -20px rgba(255,106,19,.75)}
+  .badge .n{font-family:var(--disp);font-size:clamp(1.6rem,4vw,2.3rem);font-weight:900;line-height:1;letter-spacing:-.03em;color:var(--acc)}
+  .badge .l{color:var(--mut);font-size:1rem;margin-top:8px}
+
+  section{padding:66px 0}
+  .eyebrow{color:var(--acc2);font-weight:800;font-size:.92rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}
+  h2.title{font-size:clamp(1.8rem,4.5vw,2.7rem);margin-bottom:14px}
+  .lead{color:var(--mut);font-size:1.08rem;max-width:660px;margin-bottom:8px}
+  .lead b{color:var(--tx)}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:border-color .2s,box-shadow .2s;box-shadow:0 0 0 1px rgba(255,106,19,.08),0 14px 34px -24px rgba(255,106,19,.7)}
+  .card:hover{border-color:var(--acc);box-shadow:0 0 0 1px rgba(255,106,19,.35),0 16px 40px -18px rgba(255,106,19,.85)}
+  .card .ic{font-size:1.6rem;margin-bottom:12px}
+  .card h3{font-size:1.15rem;margin-bottom:8px;letter-spacing:-.02em}
+  .card p{color:var(--mut);font-size:1.05rem}
+
+  /* GALERIA DE VIDEO: la mecanica exacta del molde */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+  .fx{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 0 1px rgba(255,106,19,.10),0 10px 28px -22px rgba(255,106,19,.8);display:flex;align-items:flex-end;padding:14px;isolation:isolate;transition:transform .18s ease,border-color .18s}
+  .fx:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 0 0 1px rgba(255,106,19,.45),0 14px 34px -16px rgba(255,106,19,.9)}
+  .fx .vd-live{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;pointer-events:none;z-index:-1}
+  .fx .fx-th{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+  .fx::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--g)}
+  .fx::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(90% 60% at 30% 18%,rgba(255,255,255,.18),transparent 55%),linear-gradient(180deg,transparent 28%,rgba(0,0,0,.82))}
+  .fx .ply{position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.45);border:1.5px solid var(--acc);display:flex;align-items:center;justify-content:center}
+  .fx .ply::after{content:"";border-left:8px solid var(--acc);border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+  .fx span{font-family:var(--disp);font-weight:800;font-size:.95rem;line-height:1.15;letter-spacing:-.01em;text-shadow:0 2px 10px rgba(0,0,0,.85);z-index:1}
+  /* v3: 8 gradientes con 16 hex sueltos -> 2 gradientes de tokens.
+     Medido: el stop claro de g1 (#f2f2f5) daba 1.09:1 contra el titulo blanco
+     del tile. Los 8 pares bajo el piso estaban todos aca. */
+  .fx.g1,.fx.g3,.fx.g5,.fx.g7{--g:linear-gradient(150deg,var(--panel2),var(--bg))}
+  .fx.g2,.fx.g4,.fx.g6,.fx.g8{--g:linear-gradient(150deg,var(--panel),var(--bg))}
+  .fx-note{color:var(--dim);font-size:1rem;margin-top:16px;max-width:760px}
+  /* reja de encuadre: si entra un 16:9 se ve CHICO Y BIEN, nunca grande y roto */
+  .fx.h16{aspect-ratio:16/9}
+  .fx.h16 .vd-live{object-fit:contain;background:var(--bg)}
+  .fx.h16 .fx-th{object-fit:contain;background:var(--bg)}
+  .pv.h16{aspect-ratio:16/9}
+  .pv.h16 .vd-hero{object-fit:contain;background:var(--bg)}
+  .pv.h16 .pv-poster{object-fit:contain;background:var(--bg)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 0 0 1px rgba(255,106,19,.08),0 14px 34px -24px rgba(255,106,19,.7)}
+  .step .num{width:38px;height:38px;border-radius:50%;background:var(--acc);color:var(--ink);box-shadow:0 0 22px -2px rgba(255,106,19,.85);font-family:var(--disp);font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .step h3{font-size:1.1rem;margin-bottom:8px}
+  .step p{color:var(--mut);font-size:1.05rem}
+
+  .acc{margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel);box-shadow:0 0 0 1px rgba(255,106,19,.08),0 16px 40px -30px rgba(255,106,19,.7)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;list-style:none;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:1.03rem;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary>span:first-child{min-width:0;overflow-wrap:anywhere}
+  summary .meta{color:var(--acc2);font-weight:700;font-size:1rem;flex-shrink:0}
+  summary::after{content:"+";color:var(--acc);font-size:1.5rem;font-weight:300;flex-shrink:0}
+  details[open] summary::after{content:"\2013"}
+  .acc-body{padding:0 24px 22px;color:var(--mut);font-size:1.05rem}
+  .acc-body ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+  .acc-body li{padding-left:18px;position:relative}
+  .acc-body li::before{content:"\203a";position:absolute;left:0;color:var(--acc2)}
+
+  /* BANDA. v5: SE SACO LA FOTO DE FONDO. Era `video/v2.jpg`, un poster
+     VERTICAL de 270x480 px estirado con object-fit:cover sobre una banda
+     apaisada de hasta 1080 px de ancho: ~4x de agrandamiento a lo ancho, y
+     por eso se veia sucia. No hay material propio apaisado (los 9 posters son
+     270x480 y el hero 360x640) y no se baja nada de un banco de imagenes, asi
+     que queda el hueco declarado: la banda es un degradado de tokens. */
+  .band{position:relative;min-height:300px;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(100deg,var(--panel2),var(--panel) 55%,var(--bg))}
+  .band .wrap{padding:62px 20px}
+  .band h2{font-size:clamp(1.6rem,4.2vw,2.5rem);max-width:620px;margin-bottom:12px}
+  .band p{color:var(--mut);max-width:520px;font-size:1.05rem}
+
+  /* ANCLAJE de precio: la suma de las piezas contra el precio de hoy */
+
+  /* OBJECIONES */
+  .obj{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:38px}
+  .ob{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:12px;padding:22px 24px;box-shadow:-6px 0 22px -16px rgba(255,106,19,.9),0 12px 30px -24px rgba(255,106,19,.6)}
+  .ob h3{font-size:1.02rem;margin-bottom:8px;color:var(--tx)}
+  .ob h3::before{content:"\201c";color:var(--acc);font-size:1.4rem;line-height:0;vertical-align:-.1em;margin-right:2px}
+  .ob h3::after{content:"\201d";color:var(--acc);font-size:1.4rem;line-height:0;vertical-align:-.1em;margin-left:2px}
+  .ob p{color:var(--mut);font-size:1.05rem}
+
+  /* BONOS APILADOS */
+  /* BONOS EN TEAL: la separacion de bono vs precio que pedia el target.
+     El borde y el glow son --acc3; el precio de abajo sigue naranja. */
+
+  /* la GARANTIA tambien es teal: no es lo que pagas, es lo que te protege */
+  .guar{background:linear-gradient(135deg,var(--panel2),var(--panel));border:1.5px solid var(--acc3);border-radius:24px;padding:44px;text-align:center;max-width:760px;margin:0 auto;box-shadow:0 0 70px -26px rgba(255,248,181,.9),0 0 0 1px rgba(255,248,181,.16)}
+  .guar .shield{font-size:3rem;margin-bottom:12px}
+
+  .price-card{background:linear-gradient(160deg,var(--panel2),var(--bg));border:1.5px solid var(--acc);border-radius:24px;padding:46px 34px;text-align:center;max-width:540px;margin:38px auto 0;box-shadow:0 0 0 1px rgba(255,106,19,.30),0 0 90px -18px rgba(255,106,19,.95),0 18px 50px -30px rgba(255,106,19,.8)}
+  .price-now{font-family:var(--disp);font-size:3.4rem;font-weight:900;line-height:1;margin:6px 0 4px;letter-spacing:-.04em;color:var(--acc);text-shadow:0 0 34px rgba(255,106,19,.8),0 0 12px rgba(255,106,19,.5)}
+  .price-list{list-style:none;text-align:left;margin:26px 0;display:grid;gap:11px}
+  .price-list li{padding-left:30px;position:relative;color:var(--tx);font-size:1.05rem}
+  .price-list li::before{content:"\2713";position:absolute;left:0;color:var(--acc);font-weight:900;text-shadow:0 0 12px rgba(255,106,19,.75)}
+  .price-card .btn{width:100%}
+
+  .bumps{margin:2px 0 20px;display:grid;gap:10px;text-align:left}
+  .bump{display:flex;align-items:flex-start;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;transition:border-color .15s}
+  .bump:hover{border-color:var(--acc2)}
+  /* el bump marcado: 10% es el tope medido sobre --panel (--acc2 queda en
+     7,05:1); al 16% cae a 6,38 y el texto del bump deja de ser AAA. */
+  .bump.on{border-color:var(--acc);background:rgba(255,106,19,.10);box-shadow:0 0 0 1px rgba(255,106,19,.35),0 8px 24px -16px rgba(255,106,19,.9)}
+  .bump input{display:none}
+  .bump .bx{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--line);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:var(--ink);transition:.15s;margin-top:2px}
+  .bump input:checked ~ .bx{background:var(--acc);border-color:var(--acc);box-shadow:0 0 16px -2px rgba(255,106,19,.9)}
+  .bump input:checked ~ .bx::after{content:"\2713"}
+  /* v6: el .bt no tenia min-width:0, y con .bx (22) y .bp (precio, no
+     encoge) le quedaban 128,4 px utiles a 390 px: el subtitulo del pack
+     industrial caia en 5 renglones y empujaba el precio hacia abajo. Con
+     el precio en su propio renglon en pantalla angosta pasa a 216 px. */
+  .bump .bt{flex:1 1 0;min-width:0;font-size:1.05rem;line-height:1.35;overflow-wrap:anywhere}
+  .bump .bt small{display:block;color:var(--mut);font-weight:500;font-size:1rem;margin-top:4px}
+  .bump .bp{font-family:var(--disp);font-weight:900;font-size:1.05rem;color:var(--acc2);white-space:nowrap}
+  .bump-nota{font-size:1rem;color:var(--mut);text-align:center;background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:8px 12px}
+  .bump-nota b{color:var(--acc2)}
+
+  .aviso{max-width:540px;margin:16px auto 0;background:var(--panel2);border:1px dashed var(--acc);box-shadow:0 0 26px -18px rgba(255,106,19,.9);border-radius:12px;padding:14px 16px;color:var(--mut);font-size:1rem}
+  .aviso b{color:var(--acc2)}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 110px;text-align:center;color:var(--mut);font-size:1rem}
+  /* v6: fuera tambien el renglon de enlaces legales (orden de Esteban:
+     "lo de abajo de terminos y todo eso, solo quitalo y dejemoslo hasta 2026
+     Melamina Pro"). Las PAGINAS de legales siguen publicadas y respondiendo
+     200 en /terminos/ /reembolsos/ /privacidad/ /contacto/: lo unico que se
+     saco es el enlace del pie. */
+
+  .buybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;justify-content:space-between;gap:12px;background:rgba(26,18,11,.94);backdrop-filter:blur(12px);border-top:1px solid rgba(255,106,19,.45);box-shadow:0 -10px 40px -18px rgba(255,106,19,.9);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+  .buybar .p{font-family:var(--disp);font-weight:900;font-size:1.22rem;letter-spacing:-.02em;line-height:1.1;color:var(--acc);text-shadow:0 0 20px rgba(255,106,19,.7)}
+  .buybar .p small{display:block;font-family:var(--sans);font-weight:600;font-size:.85rem;color:var(--mut);letter-spacing:.02em}
+  .buybar .btn{padding:13px 22px;font-size:1.05rem;flex-shrink:0}
+
+  @media(max-width:820px){.price-card{padding:34px 20px}
+    .badges{grid-template-columns:repeat(2,1fr)}
+    .grid,.steps,.obj{grid-template-columns:1fr}
+    .acc-body ul{grid-template-columns:1fr}
+    /* v6: a 390px la pastilla .meta (196 px, flex-shrink:0) dejaba 62 px
+       al titulo y su palabra mas larga mide 89 => se salia de la caja.
+       Baja a su propio renglon y el titulo recupera 274 px utiles. */
+    summary{flex-wrap:wrap;row-gap:4px}
+    summary .meta{order:3;flex-basis:100%;text-align:left}
+    summary>span:first-child{flex:1 1 auto}
+    .hero-grid{grid-template-columns:1fr;text-align:center;gap:36px}
+    .hero-copy .pill{margin-left:auto;margin-right:auto}
+    header p.sub{margin-left:auto;margin-right:auto}
+    .cta-row{justify-content:center}
+    .device{width:225px;margin-top:4px}
+    .gallery{grid-template-columns:repeat(3,1fr);gap:8px}
+    .fx{padding:9px;border-radius:11px}
+    .fx span{font-size:.72rem;line-height:1.12}
+    .fx .ply{display:none}
+    /* 6 tiles en 3 columnas = 2 filas exactas, el molde de CapCut. Los 2 ultimos
+       quedan solo en escritorio; display:none => el observer nunca los inyecta. */
+    .fx.g7,.fx.g8{display:none}
+    .band .wrap{padding:48px 20px}
+    .bump{flex-wrap:wrap;row-gap:2px}
+    .bump .bp{order:3;flex-basis:100%;padding-left:34px}
+    .buybar{display:flex}
+  }
+
+  /* ══════════════ v7 ══════════════════════════════════════════════════════
+     1) LOCKUP. El "Pro" se veia caido porque era un INLINE dentro del mismo
+     item anonimo que "MELAMINA": se alineaba por LINEA BASE, y con la base
+     compartida su centro de mayusculas cae (cap1-cap2)/2 = 2,47 px mas abajo.
+     Ahora el texto vive en .wm, que es un flex propio con line-height:1, asi
+     que "MELAMINA" y "PRO" se centran por CAJA. Medido sobre las metricas
+     reales de la fuente (hhea de Inter Tight: A-D-cap = 0,000000), el desvio
+     entre los dos pasa a 0,000 px; con Roboto (el PRIMER render en Android,
+     display=swap) queda en 0,093 px.
+     2) El PNG del logo no esta centrado en su caja: su trazo solido (alpha>=200)
+     va de y=30 a y=101 en 128 px, o sea 2 px BAJO el centro -- 0,66 px a 42 px
+     y 1,03 px a 66 px, que por si solo ya rompia el criterio de 1 px en el
+     footer. El translateY va en % para que corrija los dos tamanos con un
+     solo numero: 2/128 = 1,5625%. */
+  .logo .wm{display:flex;align-items:center;gap:2px;line-height:1}
+  .logo .mark{transform:translateY(-1.5625%)}
+
+  /* ANCLA + BADGE + RELOJ del bloque de compra */
+  .ancla{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:6px 0 2px}
+  /* el tachado NO es un gris ilegible: --dim sobre --panel2 da 8,41:1 (el piso
+     AAA de texto normal es 7). El error clasico de esta pieza es justo ese. */
+  .ancla s{color:var(--dim);font-family:var(--disp);font-weight:400;font-size:1.35rem;text-decoration-thickness:2px}
+  .ancla .off{background:var(--acc);color:var(--ink);font-family:var(--disp);font-weight:900;font-size:.9rem;letter-spacing:-.01em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 0 22px -6px rgba(255,106,19,.9)}
+  /* RELOJ: cuenta hasta la MEDIANOCHE LOCAL del visitante, no 15 minutos por
+     sesion. El molde de CapCut reiniciaba en cada visita y por eso se retiro.
+     Aca no hay marcador que guardar: la medianoche local ES el marcador, la
+     misma en cada recarga, asi que recargar no lo reinicia ni con el storage
+     bloqueado. */
+  .reloj{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;background:var(--panel2);border:1px dashed var(--acc);border-radius:12px;padding:10px 14px;margin:14px auto 18px;max-width:420px}
+  .reloj .rl{color:var(--mut);font-size:.9rem}
+  .reloj b{font-family:var(--disp);font-weight:900;font-size:1.2rem;color:var(--tx);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+  /* el bump ahora lleva su valor suelto tachado encima del precio de hoy */
+  .bump .bp{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+  .bump .bp s{color:var(--dim);font-size:.9rem;font-weight:400}
+
+  /* ══ TABLA DE VALOR (v7): UN solo bloque donde antes habia CUATRO
+     ("Arma tu pack" + "Contado, no prometido" + #anclaje + "Todo lo que entra
+     con su precio suelto"). La tabla con las casillas ES el arma-mi-pack y sus
+     numeros SON el contado-no-prometido. */
+  .vtab{max-width:720px;margin:30px auto 0;background:var(--panel);border:1px solid var(--steel);border-radius:var(--radius);overflow:hidden}
+  /* el separador pasa de --line (2,28:1) a --steel (6,31:1): la linea que
+     separa filas de precio es informacion, y 1.4.11 le pide 3:1. */
+  /* ══ LA FILA (pack-emojis-v2): de flex a REJILLA ════════════════════════
+     La fila tenia una sola caja de texto con el nombre y la descripcion
+     adentro, y en movil el precio se iba a un renglon propio ALINEADO A LA
+     IZQUIERDA debajo de todo: por eso "bailaba" segun el largo del nombre.
+     Ahora son columnas declaradas. El renglon de arriba lleva SIEMPRE
+     casilla + icono + nombre + precio, y la descripcion cae debajo ocupando
+     el ancho entero, alineada bajo el nombre. Asi el precio nunca se mueve de
+     columna y la descripcion no compite por los 100 px que quedaban. */
+  .vr{display:grid;grid-template-columns:28px 1fr 96px;align-items:center;column-gap:12px;padding:13px 18px;border-bottom:1px solid var(--steel)}
+  .vr.vb{grid-template-columns:22px 28px 1fr 96px}
+  .vr.vsum,.vr.vhoy{grid-template-columns:1fr 96px}
+  .vr:last-child{border-bottom:none}
+  /* ══ EL ICONO DE LA FILA ════════════════════════════════════════════════
+     Es el MISMO emoji de siempre, pero NO va suelto dentro del texto.
+     Medido sobre Noto Color Emoji, que es la que pinta Android: el glifo es un
+     bitmap de 136x128 px sobre un strike de 109 ppem, o sea 1,1743 em de alto
+     contra los 0,7275 em de las mayusculas de Inter. Suelto en el renglon se
+     ve 61,4% mas grande que el nombre que acompana y se lleva 1,2477 em de
+     avance del ancho util de la fila -- eso es lo que se veia "brusco".
+     En caja propia con line-height:1 el dibujo se centra por CAJA y no por
+     linea base: su centro queda a 0,0024 em del centro de la caja (0,05 px a
+     22 px de cuerpo), el tamano es identico en las 6 filas, y el ancho deja de
+     robarle lugar al texto porque ahora es una columna declarada.
+     El cuerpo sale del ancho, no del alto: 1,2477 x 22 = 27,4 px entra en 28. */
+  .vr .vi{width:28px;height:28px;font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+  .vr .vt{font-size:1.02rem;font-weight:700;min-width:0;overflow-wrap:anywhere}
+  .vr .vd{grid-column:2/-1;display:block;color:var(--mut);font-size:.95rem;margin-top:2px}
+  .vr.vb .vd{grid-column:3/-1}
+  /* la columna de precio deja de bailar con el largo del nombre: 96 px fijos,
+     que es el string MAS ANCHO que las 14 monedas de la TAB pueden producir
+     (la suma en guaranies, 91,9 px) redondeado hacia arriba. Misma columna en
+     las 8 filas, incluidas la suma y el total. */
+  .vr .vp{text-align:right;font-family:var(--disp);white-space:nowrap}
+  .vr .vp b{font-weight:900;font-size:1.05rem;color:var(--tx)}
+  /* v8 (orden de Esteban 24-sep): el precio de cada pieza suelta se leia
+     como el precio de HOY porque iba en negrilla 900 y color de texto.
+     Es el precio ANTERIOR: va tachado, sin negrilla y en gris, para que el
+     unico numero que se lea como vigente sea "Todo junto, hoy". */
+  .vr .vp s{font-weight:400;color:var(--dim);font-size:1.02rem;text-decoration-thickness:1px}
+  .vr .vp em{display:block;font-style:normal;font-size:.9rem;font-weight:800;color:var(--acc3);font-family:var(--sans)}
+  /* ENCABEZADO DE GRUPO: lo que ya entra y lo que se suma dejan de estar
+     intercalados. Antes las 2 filas con casilla caian en los puestos 3 y 4 de
+     6, asi que habia que leer fila por fila para saber que estaba pagando. */
+  .vg{font-family:var(--sans);font-size:.72rem;font-weight:800;line-height:1;letter-spacing:.14em;text-transform:uppercase;color:var(--acc3);background:var(--panel2);padding:10px 18px;border-bottom:1px solid var(--steel)}
+  .vg.vgs{color:var(--acc)}
+  .vr.vb{cursor:pointer;transition:background .15s,border-color .15s}
+  .vr.vb:hover{background:var(--panel2)}
+  .vr.vb input{display:none}
+  .vr.vb .bx{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--steel);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:var(--ink);transition:.15s}
+  .vr.vb input:checked ~ .bx{background:var(--acc);border-color:var(--acc);box-shadow:0 0 16px -2px rgba(255,106,19,.9)}
+  .vr.vb input:checked ~ .bx::after{content:"\2713"}
+  .vr.vb.on{background:rgba(255,106,19,.10)}
+  .vr.vsum{background:var(--panel2)}
+  .vr.vsum .vp s{color:var(--dim);font-weight:400;font-size:1.1rem;text-decoration-thickness:2px}
+  .vr.vhoy{background:var(--panel2);padding:17px 18px}
+  .vr.vhoy .vt{font-size:1.1rem}
+  .vr.vhoy .vp b{color:var(--acc);font-size:1.5rem;text-shadow:0 0 24px rgba(255,106,19,.7)}
+  .vnota{color:var(--mut);font-size:1rem;text-align:center;margin:14px auto 0;max-width:720px}
+  .vnota b{color:var(--acc2)}
+  @media(max-width:520px){
+    /* pack-emojis-v2: el precio YA NO baja de renglon ni se va a la izquierda.
+       Presupuesto medido a 360 px: 318 de tabla - 28 de padding = 290 utiles.
+       Fila con casilla: 22 + 26 + 86 + 3 huecos de 9 = 161, le quedan 129 al
+       nombre y la palabra mas ancha que puede caer ahi mide 78,5 px. La
+       descripcion no compite por ese hueco: va debajo, con 224 px propios. */
+    .vr{column-gap:9px;padding:12px 14px;grid-template-columns:26px 1fr 86px}
+    .vr.vb{grid-template-columns:22px 26px 1fr 86px}
+    .vr.vsum,.vr.vhoy{grid-template-columns:1fr 86px}
+    .vr .vi{width:26px;height:26px;font-size:20px}
+    .vr .vp b{font-size:.95rem}
+    .vr.vhoy{padding:16px 14px}
+    .vg{padding:9px 14px}
+    .ancla s{font-size:1.2rem}
+  }
+
+.hero-trust,.trust-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}.hero-trust span,.trust-row span{font-size:.78rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#d3d7e0;padding:5px 11px;border-radius:999px;white-space:nowrap;line-height:1}.trust-row{margin-top:10px}</style>
+<script>
+/* PIXEL DE META: va en null a proposito. El pixel de esta oferta TODAVIA NO
+   EXISTE y Esteban decide cual. Poniendo el ID aqui se enciende solo. NO se
+   hereda el pixel del molde de CapCut: mediria otro producto. */
+var PIXEL_ID = '1111081301276455';
+if (PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID); fbq('track','PageView');
+}
+</script>
+</head><body><nav><div class="wrap"><div class="logo"><img class="mark" src="https://curso.melamina.pro/img/logo-glow-128.png" width="42" height="42" alt="Melamina Pro" decoding="async"><span class="wm">MELAMINA<span class="sub">PRO</span></span></div><a href="#comprar" class="btn">Lo quiero</a></div></nav><header><div class="wrap"><div class="hero-grid"><div class="hero-copy"><h1>Deja de cortar a ojo.<br>Fabrica muebles <span class="cut">que se venden</span>.</h1><p class="sub"><b>Más de 460 clases en video</b>, por tema y a tu ritmo: del primer corte al mueble cobrado. Y te llevas <b>más de 1.600 planos con la medida de cada pieza</b>.</p><div class="cta-row"><a href="https://buy.stripe.com/eVq14mcCO4bo1PBfig0RG00?locale=es-419" class="btn big" id="btn-hero">Empezar hoy &rarr;</a></div><div class="cta-note">Pago único &middot; Acceso inmediato</div><div class="hero-trust"><span>✅ Pago único</span><span>⚡ Acceso inmediato</span><span>🛡️ Garantía 3 días</span></div></div><div class="device" aria-hidden="true"><div class="phone"><div class="screen"><div class="pv"><picture><source srcset="https://curso.melamina.pro/video/hero.webp" type="image/webp"><img class="pv-poster" src="https://curso.melamina.pro/video/hero.jpg" alt="" width="720" height="960" fetchpriority="high" decoding="async"></picture><span class="tag">Closet 2.40 m</span><span class="rec">Despiece listo</span></div><div class="tl"><div class="tools"><i></i><i></i><i></i><i></i><i></i></div><div class="track"><div class="clip a"></div><div class="scrub"></div><div class="clip b"></div><div class="clip c"></div><div class="clip d"></div></div></div></div></div></div></div><div class="badges"><div class="badge"><div class="n">+460</div><div class="l">clases en video</div></div><div class="badge"><div class="n">+1.600</div><div class="l">planos con medidas</div></div></div></div></header><!-- GALERIA DE VIDEO (mecanica del molde: thumbnail + iframe nocookie detras) --><section><div class="wrap"><div class="eyebrow">Qué vas a saber hacer</div><h2 class="title">Del tablero crudo al mueble montado</h2><p class="lead">Medir, despiezar, cortar, cantear y armar. Los mismos clips que ves en nuestros anuncios, servidos desde esta p&aacute;gina:</p><div class="gallery"><div class="fx g1" data-v="v1.mp4"><picture><source srcset="https://curso.melamina.pro/video/v1.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v1.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Corte y<br>armado</span></div><div class="fx g2" data-v="v2.mp4"><picture><source srcset="https://curso.melamina.pro/video/v2.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v2.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Mueble<br>terminado</span></div><div class="fx g3" data-v="v3.mp4"><picture><source srcset="https://curso.melamina.pro/video/v3.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v3.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Mesas y<br>escritorios</span></div><div class="fx g4" data-v="v4.mp4"><picture><source srcset="https://curso.melamina.pro/video/v4.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v4.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Armarios<br>a medida</span></div><div class="fx g5" data-v="v5.mp4"><picture><source srcset="https://curso.melamina.pro/video/v5.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v5.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Herrajes<br>y bisagras</span></div><div class="fx g6" data-v="v6.mp4"><picture><source srcset="https://curso.melamina.pro/video/v6.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v6.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Cajones<br>y correderas</span></div><div class="fx g7" data-v="v7.mp4"><picture><source srcset="https://curso.melamina.pro/video/v7.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v7.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Montaje<br>e instalación</span></div><div class="fx g8" data-v="v8.mp4"><picture><source srcset="https://curso.melamina.pro/video/v8.webp" type="image/webp"><img class="fx-th" src="https://curso.melamina.pro/video/v8.jpg" alt="" width="432" height="576" loading="lazy" decoding="async"></picture><span class="ply"></span><span>Estructura<br>y despiece</span></div></div></div></section><!-- PRECIO / CTA --><section id="comprar"><div class="wrap" style="text-align:center"><div class="eyebrow">Empieza hoy</div><h2 class="title">Arma tu pack, un solo pago</h2><div class="price-card"><div style="color:var(--mut);font-size:.9rem">Precio de hoy</div><div class="ancla"><s id="anc-lista">&nbsp;</s><span class="off" id="anc-off">&nbsp;</span></div><div class="price-now" id="precio-grande">&nbsp;</div><div style="color:var(--mut);margin-top:2px">pago único &middot; acceso de por vida</div><div class="reloj" id="reloj"><span class="rl">Este precio termina en</span><b id="reloj-d">--:--:--</b></div><div style="color:var(--dim);font-size:.85rem;margin-top:10px">Pagas en la moneda de tu país.</div><ul class="price-list"><li><b>Curso completo</b>: más de 460 clases en video, de cero al mueble instalado</li><li><b>De regalo</b>: más de 1.600 planos de melamina con la medida de cada pieza</li><li><b>2.562 planos en total</b>: melamina, madera y metal, en 7.073 páginas</li><li><b>De regalo</b>: 18 PDF de planos y catálogos</li><li><b>De regalo</b>: Mega Pack de 5 carpetas</li><li><b>Todo se descarga</b>: queda en tu disco y no vence</li><li>Garantía de 3 días sin preguntas</li></ul><div class="bumps"><label class="bump" id="bump-fx"><input type="checkbox"><span class="bx"></span><span class="bt">&#128295; <b>Pack MUEBLE INDUSTRIAL en metal</b><small><b>408 planos</b> en metal y madera</small></span><span class="bp" id="bp-fx"><s id="bps-fx">&nbsp;</s><b id="bpn-fx">&nbsp;</b></span></label><label class="bump" id="bump-cin"><input type="checkbox"><span class="bx"></span><span class="bt">&#128187; <b>Editables para cortar</b><small><b>60 archivos</b>: SketchUp · AutoCAD · DXF</small></span><span class="bp" id="bp-cin"><s id="bps-cin">&nbsp;</s><b id="bpn-cin">&nbsp;</b></span></label><div class="bump-nota" id="bump-nota">&nbsp;</div></div><a href="#comprar" class="btn big" id="btn-pago" aria-disabled="true">Checkout pendiente</a><div class="cta-note">Pago seguro &middot; Acceso inmediato al confirmar</div><div class="trust-row"><span>🔒 Pago cifrado con Stripe</span><span>💳 Visa · Mastercard</span><span>🛡️ Garantía 3 días</span></div></div><div class="aviso" id="aviso-checkout" style="display:none">&#9888;&#65039; <b>Página en preparación:</b> el boton se activa cuando esten los links de pago. Por ahora no cobra nada.</div></div></section><!-- GARANTIA --><section><div class="wrap"><div class="guar"><div class="shield">&#128737;&#65039;</div><h2 class="title" style="margin-bottom:10px">Garantía de 3 días</h2><p class="lead" style="margin:0 auto">Si en 3 días no es lo que esperabas, se devuelve el <b>100%</b>. Sin preguntas.</p></div></div></section><!-- CONTENIDO COMPLETO: sale entero de contar la entrega viva --><section><div class="wrap"><div class="eyebrow">Contenido completo</div><h2 class="title">Sección por sección, sin relleno</h2><p class="lead">Contado archivo por archivo.</p><div class="acc"><details><summary><span>1 &middot; Curso en video, sección por sección</span><span class="meta">+460 clases &middot; 563 archivos</span></summary><div class="acc-body"><ul><li>1. Videos Melamina PRO &middot; <b>30 archivos &middot; 20 en video</b></li><li>2. Manuales sobre Melamina &middot; <b>19 archivos</b></li><li>3. Clases Adicionales &middot; <b>14 videos</b></li><li>4. Planos y Plantillas &middot; <b>18 archivos</b></li><li>5. Elaboración de Muebles como Negocio &middot; <b>2 videos</b></li><li>6. Diseño de Muebles Modulares como Negocio &middot; <b>27 videos</b></li><li>7. Planos Explicados en Video &middot; <b>17 videos</b></li><li>8. Planos y Proyectos de Carpintería &middot; <b>16 archivos</b></li><li>9. Aprende SketchUp &middot; <b>28 archivos &middot; 8 en video</b></li><li>10. Aprende Polyboard &middot; <b>12 archivos &middot; 2 en video</b></li><li>11. Carpintería en Aluminio &middot; <b>2 archivos</b></li><li>12. Soldadura Eléctrica &middot; <b>1 archivo</b></li><li>13. Resina Epóxica &middot; <b>24 videos</b></li><li>14. Bono: Descarga SketchUp &middot; <b>2 archivos &middot; 1 en video</b></li><li>15. Pack Mantenimiento del Hogar 360 &middot; <b>351 videos</b></li></ul></div></details><details><summary><span>2 &middot; Planos y catálogos en PDF</span><span class="meta">18 PDF &middot; 751 planos</span></summary><div class="acc-body"><ul><li>100 Planos de Melamina (Despieces)</li><li>Catálogo de Armarios</li><li>Cocinas</li><li>Libro de Cocinas</li><li>Nuevo Libro de Cocina Avanzado</li><li>Muebles de Cocina</li><li>Diseñar Cocina</li><li>Centro de TV y Entretenimiento</li><li>Cómodas y Libreros</li><li>Escritorios</li><li>Roperos</li><li>Muebles Infantiles</li><li>Manual Melamina</li><li>Muebles de Melamina</li><li>Melamina y Planos (Conozcamos más)</li><li>Planos Drywall</li><li>Variados</li><li><b>Bono incluido</b>: Mueble Industrial (Metal + Madera) &middot; <b>285 planos</b> de acero y madera</li></ul></div></details><details><summary><span>3 &middot; Planos dentro de las carpetas del curso</span><span class="meta">67 PDF &middot; 1.384 planos</span></summary><div class="acc-body"><ul><li>Manuales sobre Melamina &middot; <b>646 planos</b> en 19 PDF</li><li>Planos y Proyectos de Carpintería &middot; <b>581 planos</b> en 16 PDF</li><li>Planos y Plantillas &middot; <b>116 planos</b> en 18 PDF</li><li>Carpintería en Aluminio &middot; <b>18 planos</b> en 2 PDF</li><li>Planos de las Clases &middot; <b>17 planos</b> en 10 PDF</li><li>Soldadura Eléctrica &middot; <b>5 planos</b> en 1 PDF</li><li>Aprende SketchUp &middot; <b>1 plano</b> en 1 PDF</li></ul></div></details><details><summary><span>3 &middot; Mega Pack de planos</span><span class="meta">5 carpetas</span></summary><div class="acc-body"><ul><li>Catálogo en Melamina</li><li>Guía Teórica</li><li>SketchUp Pro</li><li>Ejemplos y Tips para tus Armados</li><li>Bono: Hábitos Pro</li></ul></div></details><details><summary><span>4 &middot; Libros PRO</span><span class="meta">1 descarga</span></summary><div class="acc-body"><ul><li>Libros de Muebles Industriales y más</li></ul></div></details></div></div></section><!-- FAQ --><section><div class="wrap"><div class="eyebrow">Preguntas frecuentes</div><h2 class="title">Lo que todos preguntan</h2><div class="acc"><details><summary><span>Yo no sé usar AutoCAD</span></summary><div class="acc-body">No hace falta. Los planos se abren con el visor del celular y ya traen la medida puesta. Los 60 editables son un extra.</div></details><details><summary><span>No tengo un taller grande</span></summary><div class="acc-body">El corte lo hace el depósito donde compras la melamina. En casa: atornillador, plancha para el canto y espacio.</div></details><details><summary><span>Soy principiante total</span></summary><div class="acc-body">La sección 1 arranca en el tablero crudo: qué es la melamina y cómo se mide.</div></details><details><summary><span>Ya vi tutoriales gratis en YouTube</span></summary><div class="acc-body">Y son buenos. Lo que no tienen es el orden del oficio ni el plano con las medidas puestas.</div></details><details><summary><span>&iquest;Como recibo el material?</span></summary><div class="acc-body">Apenas se confirma el pago llegas a tu zona de descarga privada ordenada por sección. Descargas lo que quieras a tu disco y es tuyo para siempre.</div></details><details><summary><span>&iquest;Necesito experiencia previa en carpintería?</span></summary><div class="acc-body">No. La primera sección arranca en el tablero crudo: qué es la melamina, qué espesores existen y cómo se mide. De ahí sube hasta el mueble instalado.</div></details><details><summary><span>&iquest;Necesito máquinas caras?</span></summary><div class="acc-body">No para empezar. El corte del tablero lo hace el depósito donde compras la melamina con tu lista de despiece. Para armar necesitas atornillador, una plancha para el tapacanto y herramienta de mano.</div></details><details><summary><span>&iquest;Los planos traen las medidas?</span></summary><div class="acc-body">Sí. Los planos traen la medida de cada pieza puesta en el dibujo (en el oficio se dice <b>acotado</b>). <b>1.634 planos de melamina con medidas</b>, y <b>2.562 planos en total</b> si se cuentan también los de madera maciza y los de metal. Se contaron uno por uno sobre la entrega real: se midió página por página cuáles traen cotas y cuáles no, en <b>7.073 páginas</b> de PDF. Y se descontaron las páginas REPETIDAS: hay archivos que traen los mismos planos, y cada plano se cuenta <b>una sola vez</b>. El número que ves arriba esta <b>redondeado hacia abajo</b>, nunca hacia arriba. Aparte va el Pack Mueble Industrial en metal, que suma 408 planos más.</div></details><details><summary><span>&iquest;Es un pago mensual?</span></summary><div class="acc-body">No. Es un pago único. No se renueva, no es suscripción y el acceso no vence.</div></details><details><summary><span>&iquest;Y si no me sirve?</span></summary><div class="acc-body">Tienes 3 días de garantía. Si el material no es lo que esperabas escribes y se devuelve el 100%, sin preguntas y sin letra chica.</div></details></div><div style="margin-top:34px;text-align:center"><a href="#comprar" class="btn big">Quiero mi acceso &rarr;</a></div></div></section><footer><div class="wrap"><div class="logo" style="justify-content:center;margin-bottom:12px;gap:14px"><img class="mark big" src="https://curso.melamina.pro/img/logo-glow-128.png" width="66" height="66" alt="Melamina Pro" decoding="async"><span class="wm">MELAMINA<span class="sub">PRO</span></span></div><p>&copy; 2026 &middot; Melamina Pro</p></div></footer><div class="buybar" id="buybar"><div class="p"><span id="buybar-precio">&nbsp;</span><small>pago único &middot; acceso de por vida</small></div><a href="#comprar" class="btn" id="buybar-btn">Comprar ahora</a></div>
+<script>
+/* VIDEO — los 9 clips son los MISMOS creativos que corren en nuestros anuncios de
+   Meta, alojados en ESTE repo. Se fueron los iframes de YouTube y con ellos el
+   tercero: un embed medido pesaba 1.775.078 B (146.035 de HTML + 1.629.043 de
+   base.js) y habia 9 por pagina. Ahora son <video> del mismo origen, mudos, en
+   loop, sin controles y sin audio dentro del archivo.
+   Los 9 se recomprimieron contra un piso de SSIM declarado (hero 0,930 · mini
+   0,920) buscando el minimo peso que todavia pasa esa vara: no se apreto hasta
+   que se viera mal, se apreto hasta el piso y ahi se paro.
+   Se conserva la mecanica de peso que ya se habia ganado:
+     - el HERO arranca de una (no espera window.load, que no dispara hasta que
+       termina todo lo demas) — y hasta esa linea la pagina no pidio un byte a
+       ningun tercero, porque ya no hay ninguno que pedir.
+     - los 8 mini entran por IntersectionObserver, de a 3 vivos como maximo; el
+       que sale de pantalla SUELTA su descarga y vuelve a su poster.
+     - sin IntersectionObserver cargan todos: nunca una pantalla vacia.
+     - con saveData o 2g no se carga un solo byte de video: quedan los posters. */
+(function(){
+  var BASE = 'https://curso.melamina.pro/video/';
+  var con = navigator.connection || {};
+  var lento = con.saveData === true || /(^|-)2g$/.test(con.effectiveType || '');
+  if (lento) return; /* internet lento o ahorro de datos: solo posters, cero video */
+
+  function prender(el, arch, clase){
+    var v = el.querySelector('video.' + clase);
+    if (!v){
+      v = document.createElement('video');
+      v.className = clase;
+      v.muted = true; v.defaultMuted = true; v.loop = true; v.playsInline = true;
+      v.setAttribute('muted',''); v.setAttribute('playsinline','');
+      v.setAttribute('aria-hidden','true'); v.tabIndex = -1;
+      el.appendChild(v);
+    }
+    if (!v.getAttribute('src')){ v.preload = 'auto'; v.src = BASE + arch; }
+    var p = v.play(); if (p && p['catch']) p['catch'](function(){});
+    return v;
+  }
+
+  /* 1. EL HERO, DE UNA. Es lo primero que se ve: es lo primero que se pide. */
+  var pv = document.querySelector('.pv');
+  if (pv) prender(pv, 'hero.mp4', 'vd-hero');
+
+  /* 2. LOS 8 MINI: solo cuando entran en pantalla, y de a 3. */
+  var TILES = [].slice.call(document.querySelectorAll('.fx[data-v]'));
+
+  if (!('IntersectionObserver' in window)){
+    /* fail-safe: navegador sin observer -> todos. Nunca una grilla de posters muertos. */
+    TILES.forEach(function(c){ prender(c, c.dataset.v, 'vd-live'); });
+    return;
+  }
+
+  var TOPE = 8, VIVOS = [];
+  function soltar(c){
+    var v = c.querySelector('video.vd-live');
+    if (v){ v.pause(); v.removeAttribute('src'); v.load();   /* corta la descarga */
+            if (v.parentNode) v.parentNode.removeChild(v); }
+    var i = VIVOS.indexOf(c); if (i >= 0) VIVOS.splice(i, 1);
+  }
+  function podar(){            /* el cupo se hace soltando a los que ya no se ven */
+    for (var i = VIVOS.length - 1; i >= 0; i--) if (!VIVOS[i].visible) soltar(VIVOS[i]);
+  }
+  function encender(c){
+    if (!c.visible || c.querySelector('video.vd-live')) return;
+    podar();
+    if (VIVOS.length >= TOPE) return;  /* cupo lleno de visibles: se queda el poster */
+    prender(c, c.dataset.v, 'vd-live');
+    VIVOS.push(c);
+  }
+  var io = new IntersectionObserver(function(ens){
+    ens.forEach(function(e){ e.target.visible = e.isIntersecting; });
+    podar();
+    TILES.forEach(encender);
+  }, {rootMargin:'100px 0px'});
+  TILES.forEach(function(c){ io.observe(c); });
+})();
+</script>
+<script>
+(function(){
+  var bar=document.getElementById('buybar'), comprar=document.getElementById('comprar');
+  if(bar && comprar && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(en){
+      bar.style.display = en[0].isIntersecting ? 'none' : '';
+    }).observe(comprar);
+  }
+})();
+</script>
+<script>
+(function(){
+  /* ── CHECKOUT ───────────────────────────────────────────────────────────
+     LK va a PLACEHOLDER a proposito. Los links de Stripe del molde de CapCut
+     cobran OTRO producto (acct_1U4Vcs): ponerlos aqui le cobraria al
+     carpintero el curso de edicion de video. Cuando existan los 4 payment
+     links de esta oferta se pegan aqui y se pone BLOQUEADO en false.       */
+  var LK={base:'https://buy.stripe.com/eVq14mcCO4bo1PBfig0RG00?locale=es-419',fx:'https://buy.stripe.com/dRm4gyfP0gYadyj4DC0RG01?locale=es-419',cin:'https://buy.stripe.com/eVqaEWfP023g65Rfig0RG02?locale=es-419',todo:'https://buy.stripe.com/5kQ28qcCO7nAdyj9XW0RG03?locale=es-419'};
+  var BLOQUEADO = false;   /* <- false cuando LK tenga links reales */
+  var PR={base:'9.99',fx:'11.98',cin:'11.98',todo:'12.99'};
+
+  var REF=null;
+  try{
+    var q=new URLSearchParams(location.search);
+    REF=q.get('ad')||q.get('utm_content')||null;
+    if(REF){ REF=REF.replace(/[^A-Za-z0-9_-]/g,'').slice(0,60)||null; if(REF) sessionStorage.setItem('melaminaRef',REF); }
+    if(!REF) REF=sessionStorage.getItem('melaminaRef');
+    if(!REF && (q.get('fbclid')||/facebook\.com|instagram\.com/.test(document.referrer))) REF='MELAMINA-META-SINTAG';
+  }catch(e){}
+  /* el separador sale de la URL, no de la memoria: pegar '&' a un payment link
+     SIN query string da 403 en Stripe (medido 2026-09-24), y como REF se llena
+     con fbclid, eso rompia el checkout de TODO el trafico que viene de Meta. */
+  function conRef(u){ return REF ? u+(u.indexOf('?')<0?'?':'&')+'client_reference_id='+REF : u; }
+
+  var TAB={"COP":{"9.99":33900,"11.98":39900,"12.99":44900},"MXN":{"9.99":179,"11.98":219,"12.99":239},"BRL":{"9.99":53.99,"11.98":64.99,"12.99":69.99},"PEN":{"9.99":35.99,"11.98":42.99,"12.99":46.99},"CLP":{"9.99":9900,"11.98":11900,"12.99":12900},"ARS":{"9.99":16900,"11.98":19900,"12.99":21900},"UYU":{"9.99":429,"11.98":519,"12.99":559},"GTQ":{"9.99":79.99,"11.98":95.99,"12.99":104.99},"HNL":{"9.99":289,"11.98":349,"12.99":379},"NIO":{"9.99":389,"11.98":469,"12.99":509},"CRC":{"9.99":4990,"11.98":5990,"12.99":6490},"DOP":{"9.99":609,"11.98":729,"12.99":789},"PYG":{"9.99":62900,"11.98":75900,"12.99":81900},"BOB":{"9.99":129,"11.98":159,"12.99":169}};
+  var TZ2CC={"America/Bogota":"CO","America/Mexico_City":"MX","America/Cancun":"MX","America/Merida":"MX","America/Monterrey":"MX","America/Matamoros":"MX","America/Chihuahua":"MX","America/Ciudad_Juarez":"MX","America/Ojinaga":"MX","America/Hermosillo":"MX","America/Mazatlan":"MX","America/Bahia_Banderas":"MX","America/Tijuana":"MX","America/Lima":"PE","America/Santiago":"CL","America/Punta_Arenas":"CL","Pacific/Easter":"CL","America/Guatemala":"GT","America/Tegucigalpa":"HN","America/Managua":"NI","America/Costa_Rica":"CR","America/Santo_Domingo":"DO","America/Asuncion":"PY","America/Montevideo":"UY","America/La_Paz":"BO","America/Buenos_Aires":"AR","America/Cordoba":"AR","America/Mendoza":"AR","America/Rosario":"AR","America/Catamarca":"AR","America/Jujuy":"AR","America/Sao_Paulo":"BR","America/Bahia":"BR","America/Fortaleza":"BR","America/Recife":"BR","America/Belem":"BR","America/Manaus":"BR","America/Cuiaba":"BR","America/Campo_Grande":"BR","America/Porto_Velho":"BR","America/Boa_Vista":"BR","America/Rio_Branco":"BR","America/Maceio":"BR","America/Araguaina":"BR","America/Santarem":"BR","America/Eirunepe":"BR","America/Noronha":"BR","America/Sao_Luis":"BR","America/Guayaquil":"EC","America/El_Salvador":"SV","America/Panama":"PA","America/Argentina":"AR","America/Santa_Isabel":"MX"};
+  var MONEDAS={CO:"COP",MX:"MXN",PE:"PEN",CL:"CLP",AR:"ARS",BR:"BRL",GT:"GTQ",HN:"HNL",NI:"NIO",CR:"CRC",DO:"DOP",PY:"PYG",UY:"UYU",BO:"BOB",EC:null,SV:null,PA:null};
+  var SIM={COP:"$",MXN:"$",ARS:"$",CLP:"$",UYU:"$",DOP:"RD$",PEN:"S/",BRL:"R$",GTQ:"Q",HNL:"L",NIO:"C$",CRC:"\u20a1",PYG:"\u20b2",BOB:"Bs"};
+  var LOC={COP:"es-CO",MXN:"es-MX",ARS:"es-AR",CLP:"es-CL",PEN:"es-PE",UYU:"es-UY",BOB:"es-BO",PYG:"es-PY",GTQ:"es-GT",HNL:"es-HN",NIO:"es-NI",CRC:"es-CR",DOP:"es-DO",BRL:"pt-BR"};
+  var MON=null;
+  try{
+    var tz=(Intl.DateTimeFormat().resolvedOptions().timeZone)||"";
+    var cc=TZ2CC[tz]||TZ2CC[tz.replace("/Argentina/","/")]||TZ2CC[String(tz).split("/").slice(0,2).join("/")]||null;
+    var cur=cc?MONEDAS[cc]:null;
+    if(cur&&TAB[cur]) MON={cur:cur,t:TAB[cur]};
+  }catch(e){}
+  function fnum(n){
+    var dec=(n%1!==0)?2:0;
+    return SIM[MON.cur]+n.toLocaleString(LOC[MON.cur]||"es",{minimumFractionDigits:dec,maximumFractionDigits:dec});
+  }
+  function val(k){ return MON ? MON.t[PR[k]] : parseFloat(PR[k]); }
+  function fmt(n){ return MON ? fnum(n) : '$'+(Math.round(n*100)/100).toFixed(2); }
+  function precio(k){ return fmt(val(k)); }
+  function pon(id,t){ var e=document.getElementById(id); if(e) e.textContent=t; }
+
+  var fx=document.querySelector('#bump-fx input'),cin=document.querySelector('#bump-cin input');
+  var btn=document.getElementById('btn-pago'),big=document.getElementById('precio-grande'),nota=document.getElementById('bump-nota');
+
+  /* ══ ANCLA v7 ═══════════════════════════════════════════════════════════
+     El precio de lista NO se inventa y NO se calcula como precio/0,3: es la
+     SUMA de la tabla de piezas sueltas, y el % que se publica es el de la
+     RESTA sobre esa suma. Cada USD de LISTA sale de lo que esa MISMA pieza se
+     vende suelta hoy en el nicho (la derivacion, pieza por pieza y con su
+     fuente, esta en el INFORME de la obra). Los precios que COBRA Stripe
+     (PR/LK) no se tocan: el tachado es un numero adicional y visual.        */
+  var LISTA={curso:29,planos:13,fx:9,cin:8,mega:5,pdf:4};   /* USD */
+  var BASE_K=['curso','planos','mega','pdf'];               /* lo que ya entra */
+  /* el grano de redondeo sale de la PROPIA TAB, no de una lista a mano: si los
+     tres precios de la moneda son enteros divisibles por 100, el ancla tambien
+     cae en centenas; si la moneda lleva decimales, termina en .99 como ellos. */
+  function grano(){
+    if(!MON) return 0.01;
+    var v=[MON.t['9.99'],MON.t['11.98'],MON.t['12.99']], i, j, g=1000, ok;
+    for(i=0;i<v.length;i++) if(v[i]%1!==0) return 0.01;
+    while(g>1){ ok=true;
+      for(j=0;j<v.length;j++) if(v[j]%g!==0) ok=false;
+      if(ok) return g; g/=10; }
+    return 1;
+  }
+  var FACTOR = MON ? MON.t['9.99']/9.99 : 1, G = grano();
+  /* siempre hacia ABAJO: redondear el ancla hacia arriba seria inflarla. */
+  function lista(k){
+    var x=LISTA[k]*FACTOR;
+    return (G===0.01) ? Math.floor(x)-0.01 : Math.floor(x/G)*G;
+  }
+  /* la suma es la de las filas YA REDONDEADAS, no el redondeo de la suma: asi
+     la resta que el visitante hace a mano sobre la tabla da exactamente el
+     numero tachado y el % del badge cierra con lo que tiene delante. */
+  function sumaLista(fxOn,cinOn){
+    var s=0,i;
+    for(i=0;i<BASE_K.length;i++) s+=lista(BASE_K[i]);
+    if(fxOn)  s+=lista('fx');
+    if(cinOn) s+=lista('cin');
+    return Math.round(s*100)/100;
+  }
+  var PISO_DESC=60;   /* fail-safe: si la tabla no sostiene 60%, NO se publica */
+  function descuento(k){
+    var s=sumaLista(k==='fx'||k==='todo', k==='cin'||k==='todo'), h=val(k);
+    if(!(s>h)) return null;
+    var pct=Math.floor(100*(1-h/s));
+    return (pct<PISO_DESC) ? null : {suma:s,hoy:h,pct:pct,ahorro:Math.round((s-h)*100)/100};
+  }
+  function pintarAncla(k){
+    var d=descuento(k), s=document.getElementById('anc-lista'),
+        b=document.getElementById('anc-off'), c=document.querySelector('.ancla');
+    if(!c) return;
+    if(!d){ c.style.display='none'; return; }   /* antes callarse que mentir */
+    c.style.display='';
+    if(s) s.textContent=fmt(d.suma);
+    if(b) b.textContent='-'+d.pct+'%';
+  }
+  function pintarTabla(k){
+    var i, t=document.getElementById('v-suma');
+    for(i in LISTA) if(LISTA.hasOwnProperty(i)) pon('vp-'+i, fmt(lista(i)));
+    if(!t) return;                              /* la base no lleva tabla */
+    var d=descuento(k);
+    t.textContent = d ? fmt(d.suma) : '';
+    pon('v-hoy', fmt(val(k)));
+    pon('v-ahorro', d ? fmt(d.ahorro) : '');
+    pon('v-pct',    d ? ' · un '+d.pct+'% menos' : '');
+    var vf=document.getElementById('vrow-fx'), vc=document.getElementById('vrow-cin');
+    if(vf){ vf.classList.toggle('on',fx.checked);
+            pon('ve-fx', fx.checked?'sumado':'marcalo'); }
+    if(vc){ vc.classList.toggle('on',cin.checked);
+            pon('ve-cin',cin.checked?'sumado':'marcalo'); }
+  }
+  /* ══ RELOJ ══════════════════════════════════════════════════════════════
+     Cuenta hasta la MEDIANOCHE LOCAL del visitante, no 15 minutos por sesion.
+     El molde de CapCut reiniciaba su cuenta en cada visita y por eso se
+     retiro. Aca no hay marcador que guardar ni que pueda perderse: la
+     medianoche local ES el marcador. Recargar no lo reinicia, y con el
+     storage bloqueado da exactamente la misma hora, porque es la misma hora. */
+  function pad(n){ return (n<10?'0':'')+n; }
+  function reloj(){
+    var e=document.getElementById('reloj-d');
+    if(!e) return;
+    var MIN=15, KEY='melDeadline15', fin;
+    try{ fin=parseInt(sessionStorage.getItem(KEY),10); }catch(x){}
+    if(!fin || isNaN(fin) || fin<Date.now() || (fin-Date.now())>MIN*60000){ fin=Date.now()+MIN*60000; try{ sessionStorage.setItem(KEY,fin); }catch(x){} }
+    function tic(){
+      var s=Math.floor(Math.max(0,fin-Date.now())/1000);
+      e.textContent=pad(Math.floor(s/60))+':'+pad(s%60);
+    }
+    tic(); setInterval(tic,1000);
+  }
+  /* las casillas de la tabla de abajo y las del bloque de compra son el MISMO
+     bump: se reflejan en los dos sentidos para que nunca muestren distinto. */
+  function espejo(){
+    [['fx',fx],['cin',cin]].forEach(function(par){
+      var v=document.querySelector('#vrow-'+par[0]+' input');
+      if(!v) return;
+      v.checked=par[1].checked;
+      v.addEventListener('change',function(){ par[1].checked=v.checked; up(); });
+    });
+  }
+
+  function up(){
+    var k = fx.checked&&cin.checked ? 'todo' : fx.checked ? 'fx' : cin.checked ? 'cin' : 'base';
+    var p=precio(k);
+    /* InitiateCheckout lee el valor de AQUI, no de una constante: los bumps
+       cambian link y monto, asi que el monto se estampa en el boton en el
+       mismo momento en que cambia. Es dato, no cambia nada visual.
+       Va el precio en USD (PR), NO el de la moneda local (val): los 4 payment
+       links NO tienen currency_options (medido 2026-09-25, Stripe NH) => lo que
+       se COBRA es USD siempre, y la tabla local es solo lo que se muestra. El
+       Purchase del servidor va a traer esos mismos USD; mandar 33.900 COP aqui
+       y 9,99 USD alla seria describir el mismo embudo con dos numeros. */
+    btn.setAttribute('data-icv', parseFloat(PR[k]));
+    btn.setAttribute('data-icc', 'USD');
+    if(BLOQUEADO){
+      btn.removeAttribute('href');
+      btn.setAttribute('aria-disabled','true');
+      btn.textContent='Checkout pendiente \u00b7 '+p;
+    } else {
+      btn.href=conRef(LK[k]);
+      btn.removeAttribute('aria-disabled');
+      btn.textContent='Quiero mi acceso ahora \u00b7 '+p+' \u2192';
+      var av=document.getElementById('aviso-checkout'); if(av) av.style.display='none';
+    }
+    big.textContent=p;
+    pon('buybar-precio',p);
+  var bbb=document.getElementById('buybar-btn'); if(bbb&&!BLOQUEADO){ bbb.href=conRef(LK[k]); bbb.textContent='Comprar \u00b7 '+p+' \u2192'; }
+    document.getElementById('bump-fx').classList.toggle('on',fx.checked);
+    document.getElementById('bump-cin').classList.toggle('on',cin.checked);
+    pintarAncla(k);
+    pintarTabla(k);
+    var pTodo=fmt(val('todo')), ah=fmt(sumaLista(true,true)-val('todo'));
+    nota.innerHTML = (k==='todo')
+      ? '\ud83c\udf89 Te llevas <b>TODO por '+pTodo+'</b> ('+ah+' menos que comprando cada pieza suelta)'
+      : 'Marca los dos y te llevas <b>TODO por '+pTodo+'</b>: '+ah+' menos que comprando cada pieza suelta';
+  }
+  var hb=document.getElementById('btn-hero'); if(hb){ hb.textContent='Empezar hoy \u00b7 '+precio('base')+' \u2192'; if(!BLOQUEADO) hb.href=conRef(LK.base); }
+  /* el bump tambien lleva descuento: su valor suelto tachado al lado del
+     precio de hoy. El tachado sale de la MISMA tabla, no de otra cuenta. */
+  pon('bps-fx', fmt(lista('fx')));  pon('bpn-fx', '+'+fmt(val('fx')-val('base')));
+  pon('bps-cin',fmt(lista('cin'))); pon('bpn-cin','+'+fmt(val('cin')-val('base')));
+  reloj(); espejo();
+  fx.addEventListener('change',up); cin.addEventListener('change',up);
+  up();
+})();
+</script>
+<script>
+/* == InitiateCheckout (MELAMINA-IC-v2) ==============================
+   El evento se manda en el clic del boton que lleva a Stripe, y la
+   navegacion se RETRASA 250 ms para que la peticion a facebook.com/tr
+   alcance a salir. Sin eso el evento NO llega: el navegador abandona la
+   pagina en el mismo instante y mata la peticion en vuelo (medido el
+   2026-09-25: 18 PageView y CERO InitiateCheckout con el codigo de v1
+   puesto y clics reales hechos; quedandose en la pagina y llamando fbq a
+   mano la peticion si salia => el pixel acepta el evento, lo que fallaba
+   era sobrevivir a la navegacion).
+   POR QUE EN click Y NO EN pointerdown: pointerdown daria mas margen
+   gratis, pero en movil se dispara cuando el dedo TOCA el boton aunque
+   despues el visitante arrastre para hacer scroll => inflaria el
+   InitiateCheckout con toques que no son intencion de pago. 250 ms no los
+   siente nadie; un IC falso si ensucia la optimizacion de la campana.
+   El valor NO va clavado: sale del PROPIO BOTON en ese momento
+   (data-icv/data-icc los pinta up() en cada cambio de bump). Si faltaran,
+   se parsea el numero del texto del boton; y si tampoco, cae en 9.99 USD.
+   FAIL-SAFE (primero cobrar, despues medir): si no hay fbq, si fbq
+   revienta, si el clic trae modificador (ctrl/cmd/medio = abrir en pestana
+   nueva) o si el anchor apunta a otra pestana, NO se toca la navegacion.
+   Y hay un temporizador de escape que navega igual si algo falla en medio.
+   PROHIBIDO disparar la COMPRA desde aqui: la manda el SERVIDOR una sola
+   vez, con event_id = id de la sesion de Stripe (cs_live_...). Si el
+   navegador la mandara tambien, Meta contaria la misma venta dos veces y
+   la campana aprenderia con datos inflados (medido en CapCut: 6 compras
+   donde hubo 4). */
+(function(){
+  var ESPERA=250;    /* ms que se le dan al pixel antes de navegar */
+  var VENTANA=2500;  /* ms en que un 2o clic al mismo boton no repite el evento */
+
+  function num(t){
+    var m=String(t).match(/[0-9][0-9.,\u00a0\u202f ]*/g);
+    if(!m) return null;
+    var s=m[m.length-1].replace(/[\s\u00a0\u202f]/g,'').replace(/[.,]+$/,'');
+    var i=Math.max(s.lastIndexOf(','), s.lastIndexOf('.'));
+    var d=(i>-1) ? s.length-i-1 : -1;
+    s = (d===1||d===2) ? s.slice(0,i).replace(/[.,]/g,'')+'.'+s.slice(i+1)
+                       : s.replace(/[.,]/g,'');
+    var n=parseFloat(s);
+    return (isFinite(n) && n>0) ? n : null;
+  }
+  window.__melIC = num;   /* lo expone para que el banco lo pueda medir */
+
+  function ahora(){ return (Date.now ? Date.now() : (new Date()).getTime()); }
+  function anchor(t){
+    while(t && t.nodeType===1){
+      if(t.tagName==='A' && (t.getAttribute('href')||'').indexOf('buy.stripe.com')>-1) return t;
+      t=t.parentNode;
+    }
+    return null;
+  }
+  var ULT=null;   /* {a:anchor,t:ms,id:eventID} del ultimo evento mandado */
+  /* devuelve el ms en que el evento salio, o null si no se pudo mandar */
+  function disparar(a){
+    if(typeof window.fbq!=='function') return null;
+    var t=ahora();
+    if(ULT && ULT.a===a && (t-ULT.t)<VENTANA) return ULT.t;   /* ya salio */
+    var v=parseFloat(a.getAttribute('data-icv'));
+    var cur=a.getAttribute('data-icc') || 'USD';
+    if(!(isFinite(v) && v>0)){ v=num(a.textContent); }
+    if(!(isFinite(v) && v>0)){ v=9.99; cur='USD'; }
+    var id='ic-'+t+'-'+Math.random().toString(36).slice(2,10);
+    try{ fbq('track','InitiateCheckout',{value:v,currency:cur},{eventID:id}); }
+    catch(err){ return null; }
+    ULT={a:a,t:t,id:id};
+    return t;
+  }
+  document.addEventListener('click', function(e){
+    var a=anchor(e.target);
+    if(!a) return;
+    var t0=disparar(a);
+    if(t0===null) return;                 /* sin pixel: no se estorba la compra */
+    if(e.defaultPrevented) return;        /* otro ya decidio: no se encima */
+    if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
+    if(typeof e.button==='number' && e.button!==0) return;
+    var tg=a.getAttribute('target');
+    if(tg && tg!=='_self') return;        /* pestana nueva: la pagina no se va */
+    var href=a.href || a.getAttribute('href');
+    if(!href) return;
+    var falta=ESPERA-(ahora()-t0);
+    if(falta<=0) return;                  /* ya paso el margen: navega normal */
+    e.preventDefault();
+    var ido=false;
+    function ir(){ if(ido) return; ido=true; try{ window.location.href=href; }catch(err){} }
+    setTimeout(ir, falta);
+    setTimeout(ir, falta+750);            /* escape: si algo falla, igual navega */
+  }, true);
+})();
+</script>
+</body></html>
