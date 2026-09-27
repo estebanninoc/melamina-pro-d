@@ -659,14 +659,13 @@ if (PIXEL_ID) {
   function up(){
     var k = fx.checked&&cin.checked ? 'todo' : fx.checked ? 'fx' : cin.checked ? 'cin' : 'base';
     var p=precio(k);
-    /* InitiateCheckout lee el valor de AQUI, no de una constante: los bumps
-       cambian link y monto, asi que el monto se estampa en el boton en el
-       mismo momento en que cambia. Es dato, no cambia nada visual.
-       Va el precio en USD (PR), NO el de la moneda local (val): los 4 payment
-       links NO tienen currency_options (medido 2026-09-25, Stripe NH) => lo que
-       se COBRA es USD siempre, y la tabla local es solo lo que se muestra. El
-       Purchase del servidor va a traer esos mismos USD; mandar 33.900 COP aqui
-       y 9,99 USD alla seria describir el mismo embudo con dos numeros. */
+    /* MONEDAS: los payment links SI tienen currency_options, las 15.
+       Un comprador de LATAM recibe la sesion directo en su moneda
+       (currency: "cop", amount_total: 3390000 = 33.900 COP). Sin conversion.
+       Un comprador fuera de la tabla recibe currency: "usd" y Adaptive Pricing
+       convierte al presentar: mirar presentment_details, NO currency a secas.
+       NO tocar precios aca sin tocar Stripe en el mismo commit, y viceversa.
+       (IC lee data-icv del boton; los bumps cambian link y monto.) */
     btn.setAttribute('data-icv', parseFloat(PR[k]));
     btn.setAttribute('data-icc', 'USD');
     if(BLOQUEADO){
